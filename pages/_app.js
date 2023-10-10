@@ -17,6 +17,7 @@ export default function App({
 
 function Login() {
   const { data: session, status } = useSession();
+  console.debug('session=',session);
   if ('loading' === status)
     return <button>вЊ›</button>;
   if (session)
